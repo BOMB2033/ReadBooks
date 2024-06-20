@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "653253357841",
+    "project_id": "readbook-21651",
+    "storage_bucket": "readbook-21651.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653253357841:android:f89f971f76fdd63e7b9cb0",
+        "android_client_info": {
+          "package_name": "com.example.readbook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLv4DlhnbT2GCxEkYK2HThrRzxFKhjNrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
