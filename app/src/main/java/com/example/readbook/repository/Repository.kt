@@ -50,15 +50,10 @@ class RepositoryInMemoryImpl {
         databaseUsersReference.child(uid).setValue(User(uid = uid))
     }
     fun addBook(book: Book) {
-        dataClass.users.forEach {
-            if (it.uid == uid){
-                it.uidBooks = it.uidBooks.plus(book)
-                data.value = dataClass
-                databaseUsersReference.child(uid).removeValue()
-                databaseUsersReference.child(uid).setValue(it)
-            }
-        }
-
+        val newUid = databaseBooksReference.push().key!!
+        dataClass.books = dataClass.books.plus(book.copy(uid = newUid ))
+        data.value = dataClass
+        databaseBooksReference.child(newUid).setValue(book.copy(uid = newUid ))
     }
     fun getCurrentUser():User{
         dataClass.users.forEach {
